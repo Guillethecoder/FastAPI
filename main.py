@@ -2,7 +2,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get('/')
-def index():
+def home():
     return {'data':{'name':'Elisa'}}
 
 @app.get('/about')
